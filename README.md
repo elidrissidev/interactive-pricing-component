@@ -59,8 +59,8 @@ $ yarn build
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/interactive-pricing-component-kFKG_ss6-)
+- [Live Site URL](https://interactive-pricing-component-elidrissidev.vercel.app/)
 
 ## My process
 
@@ -78,11 +78,12 @@ This was my first time styling a native `input[type="range"]`, and it was not st
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - 
+- [Building Inclusive Toggle Buttons](https://www.smashingmagazine.com/2017/09/building-inclusive-toggle-buttons/) - This helped me understand how to build accessible toggle buttons using only the native `button` element!.
+- [A Sliding Nightmare: Understanding the Range Input](https://css-tricks.com/sliding-nightmare-understanding-range-input/) - This great article from CSS Tricks goes deep into the range input and how to customize it in all the major browsers.
 
 ## Author
 
-- Website - [Mohamed ELIDRISSI](https://www.your-site.com)
+- Website - [Mohamed ELIDRISSI](https://www.elidrissi.dev)
 - Frontend Mentor - [@elidrissidev](https://www.frontendmentor.io/profile/elidrissidev)
 
 ## License
