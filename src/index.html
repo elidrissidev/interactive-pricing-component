@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Interactive pricing component</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__heading">Simple, traffic-based pricing</h1>
+    <p class="header__body">Sign-up for our 30-day trial. No credit card required.</p>
+  </header>
+  <main class="card-wrapper">
+    <div class="card">
+      <div class="card__pricing">
+        <span class="pricing__pageviews js-plan-pageviews">100k pageviews</span>
+        <div class="pricing__slider">
+          <label for="pageviews" class="sr-only">Pageviews</label>
+          <input
+            type="range"
+            id="pageviews"
+            class="slider js-slider"
+            list="pageviews-list"
+            min="1"
+            max="5"
+            oninput="this.style.setProperty('--current-val', this.value)"
+          >
+          <datalist id="pageviews-list">
+            <option value="10k">
+            <option value="50k">
+            <option value="100k">
+            <option value="500k">
+            <option value="1M">
+          </datalist>
+        </div>
+        <div class="pricing__plan">
+          <span class="plan__price js-plan-price">&dollar;16.00</span>
+          <span class="plan__duration">/ month</span>
+        </div>
+        <div class="pricing__plan-toggle">
+          <span class="plan-toggle__label" aria-hidden="true">Monthly billing</span>
+          <button type="button" class="plan-toggle__btn js-toggle-plan" aria-pressed="false">
+            <span class="knob" aria-hidden="true"></span>
+            <span class="sr-only">Yearly billing (-25% discount)</span>
+          </button>
+          <div aria-hidden="true">
+            <span class="plan-toggle__label">Yearly billing</span>
+            <div class="plan-toggle__discount">
+              <span>-25%</span>
+              <span class="discount__text">&nbsp;discount</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cta">
+        <ul class="cta__features">
+          <li>Unlimited websites</li>
+          <li>100% data ownership</li>
+          <li>Email reports</li>
+        </ul>
+        <button type="button" class="cta__btn js-start-trial">Start my trial</button>
+      </div>
+    </div>
+  </main>
+  <script src="js/toggle.js" type="module"></script>
+</body>
+</html>
